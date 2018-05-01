@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Awesome font CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+<style>
+    .subjects {
+        margin: 5% 7%;
+    }
+
+    .payments {
+        margin: 5% 7%;
+    }
+    .container {
+        margin: 5% 6%;
+    }
+    p{
+        outline-style: groove;
+        border: 1px;
+        margin: 25px;
+        padding: 14px 25px;
+    }
+    /* .fas {
+        float: right;
+    } */
+    .fa-check-circle {
+        color: rgba(19, 122, 10, 0.9);
+        float: right;
+    }
+    .fa-times-circle {
+        color: #BD0909;
+        float: right;
+    }
+    .fa-ellipsis-h {
+        color: #B8B10F;
+        float: right;
+    }
+    
+    .list-group-item{
+        background-color: rgba(36, 94, 163, 0.9);
+        color: white;
+        padding: 20px;
+    }
+    .navbar {
+        background-color: rgba(32, 67, 102, 0.93);
+        height: 70px;
+    }
+    .fa-comment {
+        margin-top: 50px;
+    }
+    .doe {
+        color:  rgb(121, 119, 119);
+    }
+    .fa-star {
+        margin-top: 35px;
+    }
+    .honor, .ashstar {
+         float: right;
+    }
+    .honor {
+        color: #FCBE00;
+    }
+    .ashstar {
+        color: #C4C4C4;
+    }
+</style>
+</head>
+
+
+<body>
+      <!-- Navbar-->
+      <nav class="navbar navbar-expand-lg navbar-light"></nav>
+
+      <!-- List group -->
+    <div class="row">
+        <div class="col-2">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active" id="list-job-list" data-toggle="list" href="#list-job" role="tab" aria-controls="job">Job</a>
+            <a class="list-group-item list-group-item-action" id="list-chats-list" data-toggle="list" href="#list-chats" role="tab" aria-controls="chats">Chats</a>
+            <a class="list-group-item list-group-item-action" id="list-payments-list" data-toggle="list" href="#list-payments" role="tab" aria-controls="payments">Payments</a>
+            <a class="list-group-item list-group-item-action" id="list-notifications-list" data-toggle="list" href="#list-notifications" role="tab" aria-controls="notifications">Notifications</a>
+            <a class="list-group-item list-group-item-action" id="list-mysubjects-list" data-toggle="list" href="#list-mysubjects" role="tab" aria-controls="mysubjects">My Subjects</a>
+            <a class="list-group-item list-group-item-action" id="list-myprofile-list" data-toggle="list" href="#list-myprofile" role="tab" aria-controls="myprofile">My Profile</a>
+          </div>
+        </div>
+        <!-- End of List group -->
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+              <!-- Job Page -->
+              <div class="container">
+            <div class="tab-pane fade show active" id="list-job" role="tabpanel" aria-labelledby="list-job-list">
+                <h2>Akpor's JAMB Lessons</h2>
+                <h4><i class="fas fa-comment"></i>Reviews</h4>
+                <p class= "doe">John  Doe <br> "He's an awesome tutor. He tries to explain everything to a point that is 
+                understandable to everyone"</p>
+                <p class= "doe">John  Doe <br> "He's an awesome tutor. He tries to explain everything to a point that is 
+                    understandable to everyone"</p>
+                <p class= "doe">John  Doe <br> "He's an awesome tutor. He tries to explain everything to a point that is 
+                        understandable to everyone"</p>
+                <i class="fas fa-star star">Rating</i>
+                <i class="fas fa-star honor"></i>
+                <i class="fas fa-star honor"></i>
+                <i class="fas fa-star honor"></i>
+                <i class="fas fa-star honor"></i>
+                <i class="fas fa-star  ashstar"></i>
+            </div>
+            </div>
+            <!-- End of Job Page -->
+            <div class="tab-pane fade" id="list-chats" role="tabpanel" aria-labelledby="list-chats-list">kkfjjfjfjf</div>
+                <!-- Payment Page -->
+            <div class="tab-pane fade" id="list-payments" role="tabpanel" aria-labelledby="list-payments-list">
+                    <div class="row payments">
+                            <div class="col-8">
+                            <p>Nathan's JAMB Lessons<i class="fas fa-check-circle"></i></p>
+                            <p>Ekong's JAMB Lessons<i class="fas fa-times-circle"></i></p>
+                            <p>Edidiong's JAMB Lessons<i class="fas fa-check-circle"></i></p>
+                            <p>Akan's JAMB Lessons<i class="fas fa-ellipsis-h"></i></p>
+                            <p>Biola's JAMB Lessons<i class="fas fa-check-circle"></i></p>     
+                            </div>                  
+                    </div>            
+            </div>
+            <!-- End of Payment Page -->
+            <div class="tab-pane fade" id="list-notifications" role="tabpanel" aria-labelledby="list-notifications-list">uurooriir</div>
+                <!-- My Subjects Page -->
+            <div class="tab-pane fade" id="list-mysubjects" role="tabpanel" aria-labelledby="list-mysubjects-list">
+                    
+                    <div class="row subjects">
+                            <div class="col-8">
+                            <p>MATHEMATICS</p>
+                            <p>ENGLISH LANGUAGE</p>
+                            <p>PHYSICS</p>
+                            <p>CHEMISTRY</p>
+                            <p>BIOLOGY</p>     
+                            </div>                  
+                    </div>            
+            </div>
+            <!-- End of My Subjects Page-->
+            <div class="tab-pane fade" id="list-myprofile" role="tabpanel" aria-labelledby="list-myprofile-list"></div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
