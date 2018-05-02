@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin Dashboard</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+<style>
+
+.navbar{
+        height: 100px;
+        background-color: rgba(32, 67, 102, 0.93);
+}
+
+.list-group-item {
+    padding: 20px 10px;
+    background-color: rgba(36, 94, 163, 0.9);
+    color: #fff;
+    margin:0;
+}
+.list-group-item:hover{
+        background-color: rgba(32, 67, 102, 0.93) ;
+        color: white;
+}
+.list-group-item:active{
+        background-color: rgba(32, 67, 102, 0.93) ;
+        color: white;
+    }
+
+.fas {
+    padding: 10px;
+}
+
+table {
+    margin-top: 40px;
+    width: 90% !important;
+}
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+li {
+    list-style: none;
+    font-size: 16px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 10px; 
+}
+.leftContent {
+    margin-top: 20px;
+    padding-top: 30px;
+    border-right: 1px solid #000;
+}
+.rightContent {
+    margin-top: 100px;
+}
+.rightIcon {
+    padding-right: 100px;
+    margin-left: 800px;
+}
+
+.content4 {
+    margin-top: 50px;
+}
+
+</style>
+
+
+</head>
+
+  <body>
+
+    <!-- navbar -->
+              <nav class="navbar navbar-expand-lg navbar-light">
+               
+              </nav>
+    <!-- End of navbar -->
+
+    <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-2">
+            <div class="list-group" id="list-tab" role="tablist">
+              <a class="list-group-item list-group-item-action" id="list-jobs-list" data-toggle="list" href="#list-jobs" role="tab" aria-controls="jobs">
+                <i class="fas fa-archive fa-lg"></i>Jobs</a>
+
+              <a class="list-group-item list-group-item-action" id="list-Payment Escrow-list" data-toggle="list" href="#list-Payment Escrow" role="tab" aria-controls="Payment Escrow">
+                <i class="fas fa-dollar-sign fa-lg"></i>Payment Escrow</a>
+
+              <a class="list-group-item list-group-item-action" id="list-Notifications-list" data-toggle="list" href="#list-Notifications" role="tab" aria-controls="mNotifications">
+                <i class="fas fa-bell fa-lg"></i>Notifications</a>
+
+              <a class="list-group-item list-group-item-action" id="list-Verfication-list" data-toggle="list" href="#list-Verfication" role="tab" aria-controls="Verfication">
+                <i class="fas fa-check fa-lg"></i>Verfication</a>
+
+              <a class="list-group-item list-group-item-action" id="list-SecurityCheck-list" data-toggle="list" href="#list-SecurityCheck" role="tab" aria-controls="SecurityCheck">
+                <i class="fas fa-clipboard fa-lg"></i>Security Check</a>
+
+              <a class="list-group-item list-group-item-action" id="list-becomeATeacher-list" data-toggle="list" href="#list-becomeATeacher" role="tab" aria-controls="becomeATeacher">Become a Teacher</a>
+            </div>
+          </div>
+
+          <div class="col-10">
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="list-jobs" role="tabpanel" aria-labelledby="list-jobs-list">
+
+            
+                <table class="responsive table table-bordered table-hover"> 
+                    <td colspan="3" class="text-center"><b>Akpos' JAMB Lesson</b></td>                    
+                    <tbody>
+                      <tr>
+                          <td>Client</td>
+                          <td>Tutor</td>
+                          <td>Status</td>
+                          </tr>
+                          <tr>
+                          <td>Start Innovation Hub</td>
+                          <td>Mercy Ikpe</td>
+                          <td>Completed</td>
+                          </tr>
+                    </tbody>
+
+                  </table>
+
+
+                  <table class="responsive table table-bordered table-hover"> 
+                    <td colspan="3" class="text-center"><b>Akpos' JAMB Status</b></td>                    
+                    <tbody>
+                      <tr>
+                          <td>Client</td>
+                          <td>Tutor</td>
+                          <td>Status</td>
+                          </tr>
+                          <tr>
+                          <td>Start Innovation Hub</td>
+                          <td>Mercy Ikpe</td>
+                          <td>Completed</td>
+                          </tr>
+                    </tbody>
+
+                  </table>
+        </div>
+
+              <div class="tab-pane fade" id="list-Payment Escrow" role="tabpanel" aria-labelledby="list-Payment Escrow-list">
+                <table class="responsive table table-bordered table-hover"> 
+                    <td colspan="3" class="text-center"><b>Akpos' JAMB Lesson</b></td>                    
+                    <tbody>
+                      <tr>
+                          <td>Client</td>
+                          <td>Tutor</td>
+                          <td>Status</td>
+                          </tr>
+                          <tr>
+                          <td><i class="fas fa-check fa-lg green"></i></td>
+                          <td><i class="fas fa-check fa-lg green"></i></td>
+                          <td><i class="fas fa-check fa-lg green"></i></td>
+                          </tr>
+                    </tbody>
+
+                  </table>
+
+
+                  <table class="responsive table table-bordered table-hover"> 
+                    <td colspan="3" class="text-center"><b>Akpos' JAMB Status</b></td>                    
+                    <tbody>
+                      <tr>
+                          <td>Client</td>
+                          <td>Tutor</td>
+                          <td>Status</td>
+                          </tr>
+                          <tr>
+                          <td><i class="fas fa-times fa-lg red"></i></td>
+                          <td><i class="fas fa-times fa-lg red"></i></td>
+                          <td><i class="fas fa-times fa-lg red"></i></td>
+                          </tr>
+                    </tbody>
+
+                  </table>
+              </div>
+
+              <div class="tab-pane fade" id="list-Notifications" role="tabpanel" aria-labelledby="list-Notifications-list">
+
+                <div class="row">
+                    <div class="col-7 leftContent">
+                        <ul>
+                            <li>hire a tutor</li>
+                            <li>hire a tutor</li>
+                            <li>hire a tutor</li>
+                            <li>hire a tutor</li>
+                            <li>hire a tutor</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-4 rightContent"> 
+                        <p class="text-right"><i class="fas fa-times fa-lg red"></i></p>
+                        <p>You just received payment</p>
+                        <p>You just received payment</p>
+                    </div>
+                </div>
+                
+            </div>
+
+              <div class="tab-pane fade" id="list-Verfication" role="tabpanel" aria-labelledby="list-Verfication-list">
+                  
+                  <div class="col-11 content4"> 
+
+                    <ul>
+                        <li>You just hired a tutor<i class="fas fa-ellipsis-v fa-lg rightIcon dropdown" data-toggle="dropdown"></i>
+                         <ul class="dropdown-menu">
+                              <li>Verify this tutor</li>
+                              <li><i class="fas fa-check fa-lg green"></i><i class="fas fa-times fa-lg red"></i></li>
+                            </ul>   
+                        </li>
+                    </ul>
+                
+
+                    <ul>
+                        <li>You received payment<i class="fas fa-ellipsis-v fa-lg rightIcon dropdown" data-toggle="dropdown"></i>
+                         <ul class="dropdown-menu">
+                              <li>Verify this tutor</li>
+                              <li><i class="fas fa-check fa-lg green"></i><i class="fas fa-times fa-lg red"></i></li>
+                            </ul>   
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>You just hired a tutor<i class="fas fa-ellipsis-v fa-lg rightIcon dropdown" data-toggle="dropdown"></i>
+                         <ul class="dropdown-menu">
+                              <li>Verify this tutor</li>
+                              <li><i class="fas fa-check fa-lg green"></i><i class="fas fa-times fa-lg red"></i></li>
+                            </ul>   
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>A tutor is avialable<i class="fas fa-ellipsis-v fa-lg rightIcon dropdown" data-toggle="dropdown"></i>
+                         <ul class="dropdown-menu">
+                              <li>Verify this tutor</li>
+                              <li><i class="fas fa-check fa-lg green"></i><i class="fas fa-times fa-lg red"></i></li>
+                            </ul>   
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>You received payment<i class="fas fa-ellipsis-v fa-lg rightIcon dropdown" data-toggle="dropdown"></i>
+                         <ul class="dropdown-menu">
+                              <li>Verify this tutor</li>
+                              <li><i class="fas fa-check fa-lg green"></i><i class="fas fa-times fa-lg red"></i></li>
+                        </ul>   
+                        </li>
+                        </ul>
+                     
+                    </div>
+
+              </div>
+
+              <div class="tab-pane fade" id="list-SecurityCheck" role="tabpanel" aria-labelledby="list-SecurityCheck-list">
+                  <table class="responsive table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                         <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                          </tr>
+                          <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                          </tr>
+                          <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                          </tr>
+                        </tbody>
+
+                  </table>
+              </div>
+
+              <div class="tab-pane fade" id="list-becomeATeacher" role="tabpanel" aria-labelledby="list-becomeATeacher-list">
+                  <table class="responsive table table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Email</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                         <td>John</td>
+                          <td>Doe</td>
+                          <td>john@example.com</td>
+                          </tr>
+                          <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                          </tr>
+                          <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                          </tr>
+                        </tbody>
+
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <style>
+
+    $('#myList a').on('click', function (e) {
+      e.preventDefault()
+      $(this).tab('show')
+    }) 
+    </style>
+
+  </body>
+</html>
